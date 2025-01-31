@@ -1,0 +1,61 @@
+﻿@model List<ClienteModel>
+@{
+    ViewData["Title"] = "Página de Clientes";
+}
+<div class="text-center">
+    <h4 class="display-5">Cadastro de Clientes</h4>
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["MensagemSucesso"]
+        </div>
+    }
+
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @TempData["MensagemErro"]
+        </div>
+    }
+
+</div>
+<div class="d-grid gap-2 d-md-flex justify-content-md-start border mt-4">
+    <a class="btn btn-success w-100" role="button" asp-controller="Cliente" asp-action="IncluirCliente">Incluir novo Cliente</a>
+</div>
+<table class="table table-hover table-border mt-4" id="table-grid">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome Completo</th>
+            <th scope="col">Cep</th>
+            <th scope="col">Cidade</th>
+            <th scope="col">UF</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (ClienteModel cliente in Model)
+            {
+                <tr>
+                    <th scope="row">@cliente.Cod_Cliente</th>
+                    <td>@cliente.Des_NomeCliente</td>
+                    <td>@cliente.Des_Cep</td>
+                    <td>@cliente.Des_Cidade</td>
+                    <td>@cliente.Des_UF</td>
+                    <td>
+                        <a role="button" class="btn btn-primary btn-sm" asp-route-id="@cliente.Cod_Cliente" asp-controller="Cliente" asp-action="EditarCliente">Editar</a>
+                        <a role="button" class="btn btn-secondary btn-sm" asp-route-id="@cliente.Cod_Cliente" asp-controller="Cliente" asp-action="MostrarCliente">Detalhes</a>
+                        <a role="button" class="btn btn-danger btn-sm" asp-route-id="@cliente.Cod_Cliente" asp-controller="Cliente" asp-action="ExcluirCliente">Excluir</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr class="odd"><td valign="top" colspan="9">Nenhum cliente encontrado</td></tr>
+        }
+    </tbody>
+</table>
