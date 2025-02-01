@@ -1,8 +1,38 @@
-﻿@{
+﻿@using TesteTecnicoWK.Enums
+@model ClienteModel
+@{
     ViewData["Title"] = "Edição de Clientes";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Cadastro de Clientes</h1>
-    <p>Sistema Controle de Pedidos - PedidoWeb 1.0 - Edição de Clientes</p>
+    <h4 class="display-5">Edição de Clientes</h4>
 </div>
+
+<form asp-controller="Cliente" asp-action="EditarCliente" method="post">
+    <input type="hidden" asp-for="Cod_Cliente" /> <!-- Campo oculto para o ID do cliente -->
+    <div class="form-group mt-3 mb-3">
+        <label for="nome" class="form-label">Nome Completo</label>
+        <input type="text" asp-for="Des_NomeCliente" class="form-control" placeholder="Informe o nome completo do cliente.">
+        @Html.ValidationMessageFor(x => x.Des_NomeCliente)
+    </div>
+    <div class="form-group mt-3 mb-3">
+        <label for="nome" class="form-label">CEP</label>
+        <input type="text" asp-for="Des_Cep" class="form-control" placeholder="Informe o CEP do cliente">
+    </div>
+    <div class="form-group mt-3 mb-3">
+        <label for="nome" class="form-label">Cidade</label>
+        <input type="text" asp-for="Des_Cidade" class="form-control" placeholder="Informe a cidade do cliente">
+    </div>
+    <div class="form-group mt-3 mb-3">
+        <label for="uf" class="form-label">Estado</label>
+        <select id="uf" asp-for="Des_UF" class="form-control">
+            <option value="" disabled selected>Selecione um estado</option>
+            @foreach (var estado in Enum.GetValues(typeof(EstadosEnum)))
+            {
+                <option value="@estado">@estado</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Gravar</button>
+    <a class="btn btn-secondary" asp-controller="Cliente" asp-action="Index">Voltar</a>
+</form>

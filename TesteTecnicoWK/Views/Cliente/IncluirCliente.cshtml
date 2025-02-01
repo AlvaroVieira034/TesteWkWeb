@@ -1,8 +1,84 @@
-﻿@{
+﻿@using TesteTecnicoWK.Enums
+@model ClienteModel
+@{
     ViewData["Title"] = "Inclusão de Clientes";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Cadastro de Clientes</h1>
-    <p>Sistema Controle de Pedidos - PedidoWeb 1.0 - Inclusão de Clientes</p>
+    <h1 class="display-4">Inclusão de Clientes</h1>
 </div>
+
+<body>
+    <form asp-controller="Cliente" asp-action="IncluirCliente" method="post">
+        <div class="form-group mt-3 mb-3">
+            <label for="nome" class="form-label">Nome Completo</label>
+            <input type="text" asp-for="Des_NomeCliente" class="form-control" placeholder="Informe o nome completo do cliente.">
+            @Html.ValidationMessageFor(x => x.Des_NomeCliente)
+        </div>
+
+        <div class="form-group mt-3 mb-3">
+            <label for="cep" class="form-label">CEP</label>
+            <input type="text" id="cep" asp-for="Des_Cep" class="form-control" placeholder="Informe o CEP do cliente">
+        </div>
+
+        <div class="form-group mt-3 mb-3">
+            <label for="cidade" class="form-label">Cidade</label>
+            <input type="text" id="cidade" asp-for="Des_Cidade" class="form-control" placeholder="Informe a cidade do cliente">
+        </div>
+
+        <div class="form-group mt-3 mb-3">
+            <label for="uf" class="form-label">Estado</label>
+            <select id="uf" asp-for="Des_UF" class="form-control">
+                <option value="" disabled selected>Selecione um estado</option>
+                @foreach (var estado in Enum.GetValues(typeof(EstadosEnum)))
+                {
+                    <option value="@estado">@estado</option>
+                }
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Gravar</button>
+        <a class="btn btn-secondary" asp-controller="Cliente" asp-action="Index">Voltar</a>
+    </form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Aplica a máscara no campo de CEP
+            $('#cep').mask('00000-000');
+
+            // Adiciona funcionalidade para buscar o endereço pelo CEP
+            $('#cep').on('blur', async function () {
+                const cep = $(this).val().replace(/\D/g, '');
+
+                if (cep.length === 8) {
+                    try {
+                        const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+                        if (!response.ok) throw new Error("Erro ao buscar o CEP.");
+
+                        const dados = await response.json();
+
+                        if (dados.erro) {
+                            alert("CEP não encontrado.");
+                            return;
+                        }
+
+                        $('#endereco').val(dados.logradouro || '').prop('disabled', false);
+                        $('#bairro').val(dados.bairro || '').prop('disabled', false);
+                        $('#cidade').val(dados.localidade || '').prop('disabled', false);
+                        $('#uf').val(dados.uf || '').prop('disabled', false);
+                        $('#complemento').val(dados.complemento || '').prop('disabled', false);
+                    } catch (error) {
+                        console.error("Erro ao buscar o CEP:", error);
+                        alert("Não foi possível buscar o CEP. Tente novamente mais tarde.");
+                    }
+                } else {
+                    alert("CEP inválido. Certifique-se de informar 8 dígitos.");
+                }
+            });
+        });
+    </script>
+</body>

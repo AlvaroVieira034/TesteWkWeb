@@ -32,7 +32,7 @@ namespace TesteTecnicoWK.Repository
         {
             ClienteModel clienteDB = BuscarClientePorId(cliente.Cod_Cliente);
 
-            if (clienteDB == null) throw new System.Exception("Houve um erro na atualização do cliente!");
+            if (clienteDB == null) throw new System.Exception("Exceção lançada classe ClienteRepository - Metodo: EditarCliente");
 
             clienteDB.Des_NomeCliente = cliente.Des_NomeCliente;
             clienteDB.Des_Cep = cliente.Des_Cep;

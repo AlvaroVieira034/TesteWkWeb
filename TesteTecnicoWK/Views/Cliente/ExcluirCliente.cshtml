@@ -1,8 +1,42 @@
-﻿@{
+﻿@using TesteTecnicoWK.Enums
+@model ClienteModel
+@{
     ViewData["Title"] = "Exclusão de Clientes";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Cadastro de Clientes</h1>
-    <p>Sistema Controle de Pedidos - PedidoWeb 1.0 - Exclusão de Clientes</p>
+    <h4 class="display-6">Confirma a exclusão do cliente abaixo?</h4>
 </div>
+
+<form asp-controller="Cliente" asp-action="EditarCliente" method="post">
+    <div class="form-group mt-3 mb-3">
+        <label for="nome" class="form-label">Nome Completo</label>
+        <input type="text" asp-for="Des_NomeCliente" class="form-control" placeholder="Informe o nome completo do cliente." disabled>
+    </div>
+
+
+    <div class="form-group mt-3 mb-3">
+        <label for="nome" class="form-label">CEP</label>
+        <input type="text" asp-for="Des_Cep" class="form-control" placeholder="Informe o CEP do cliente" disabled>
+    </div>
+
+    <div class="form-group mt-3 mb-3">
+        <label for="nome" class="form-label">Cidade</label>
+        <input type="text" asp-for="Des_Cidade" class="form-control" placeholder="Informe a cidade do cliente" disabled>
+    </div>
+    
+    <div class="form-group mt-3 mb-3">
+        <label for="uf" class="form-label">Estado</label>
+        <select id="uf" asp-for="Des_UF" class="form-control">
+            <option value="" disabled selected>Selecione um estado</option>
+            @foreach (var estado in Enum.GetValues(typeof(EstadosEnum)))
+            {
+                <option value="@estado">@estado</option>
+            }
+        </select>
+    </div>
+
+    <a class="btn btn-primary btn-sm" role="button" asp-controller="Cliente" asp-action="Index">Cancelar Exclusão</a>
+    <a class="btn btn-danger btn-sm" role="button" asp-controller="Cliente" asp-action="ApagarCliente" asp-route-id="@Model.Cod_Cliente">Confirmar Exclusão</a>
+
+</form>

@@ -6,6 +6,7 @@ namespace TesteTecnicoWK.Models
     {
         [Key]
         public int Cod_Cliente { get; set; }
+        [Required(ErrorMessage = "O nome do cliente é obrigatório.")]
         public string Des_NomeCliente { get; set; }
         public string Des_Cep { get; set; }
         public string Des_Cidade { get; set; }

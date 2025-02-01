@@ -19,7 +19,6 @@ namespace TesteTecnicoWK.Controllers
 
         public IActionResult IncluirCliente()
         {
-
             return View();
         }
 
@@ -39,6 +38,65 @@ namespace TesteTecnicoWK.Controllers
         {
             ClienteModel cliente = _clienteRepository.BuscarClientePorId(id);
             return View(cliente);
+        }
+
+
+        [HttpPost]
+        public IActionResult IncluirCliente(ClienteModel cliente)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _clienteRepository.IncluirCliente(cliente);
+                    TempData["MensagemSucesso"] = "Cliente incluído com sucesso!";
+                    return RedirectToAction("Index");
+                }
+
+                return View(cliente);
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Ocorreu um erro ao incluir um novo cliente! - Erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult EditarCliente(ClienteModel cliente)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _clienteRepository.EditarCliente(cliente);
+                    TempData["MensagemSucesso"] = "Cliente alterado com sucesso!";
+                    return RedirectToAction("Index");
+                }
+
+                return View(cliente);
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Ocorreu um erro ao editar o cliente! - Erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
+        }
+
+        [HttpGet]
+        public IActionResult ApagarCliente(int id)
+        {
+            try
+            {
+                _clienteRepository.ExcluirCliente(id);
+                TempData["MensagemSucesso"] = "Cliente excluído com sucesso!";
+                return RedirectToAction("Index");
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Ocorreu um erro ao excluir o cliente! - Erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
         }
     }
 }
