@@ -10,6 +10,7 @@ builder.Services.AddDbContext<BancoContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IClienteInterface, ClienteRepository>();
+builder.Services.AddScoped<IProdutoInterface, ProdutoRepository>();
 
 var app = builder.Build();
 

@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Treinamento\\c#\\TesteTecnicoWK\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|c:\\treinamento\\c#\\testetecnicowk\\testetecnicowk\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|solutionrelative:testetecnicowk\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|c:\\treinamento\\c#\\testetecnicowk\\testetecnicowk\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|solutionrelative:testetecnicowk\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|c:\\treinamento\\c#\\testetecnicowk\\testetecnicowk\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|solutionrelative:testetecnicowk\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|c:\\treinamento\\c#\\testetecnicowk\\testetecnicowk\\views\\produto\\mostrarproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|solutionrelative:testetecnicowk\\views\\produto\\mostrarproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|c:\\treinamento\\c#\\testetecnicowk\\testetecnicowk\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|solutionrelative:testetecnicowk\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|c:\\treinamento\\c#\\testetecnicowk\\testetecnicowk\\views\\produto\\editarproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|solutionrelative:testetecnicowk\\views\\produto\\editarproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|c:\\treinamento\\c#\\testetecnicowk\\testetecnicowk\\repository\\iclienteinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|solutionrelative:testetecnicowk\\repository\\iclienteinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|c:\\treinamento\\c#\\testetecnicowk\\testetecnicowk\\views\\produto\\excluirproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|solutionrelative:testetecnicowk\\views\\produto\\excluirproduto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|c:\\treinamento\\c#\\testetecnicowk\\testetecnicowk\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|solutionrelative:testetecnicowk\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|c:\\treinamento\\c#\\testetecnicowk\\testetecnicowk\\models\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|solutionrelative:testetecnicowk\\models\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|c:\\treinamento\\c#\\testetecnicowk\\testetecnicowk\\data\\bancocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F995C35D-6A3F-48A0-90AA-E9F77881ECA1}|TesteTecnicoWK\\TesteTecnicoWK.csproj|solutionrelative:testetecnicowk\\data\\bancocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,79 +46,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Views\\Cliente\\Index.cshtml",
-              "RelativeDocumentMoniker": "TesteTecnicoWK\\Views\\Cliente\\Index.cshtml",
-              "ToolTip": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Views\\Cliente\\Index.cshtml",
-              "RelativeToolTip": "TesteTecnicoWK\\Views\\Cliente\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-31T21:10:01.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ClienteRepository.cs",
-              "DocumentMoniker": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Repository\\ClienteRepository.cs",
-              "RelativeDocumentMoniker": "TesteTecnicoWK\\Repository\\ClienteRepository.cs",
-              "ToolTip": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Repository\\ClienteRepository.cs",
-              "RelativeToolTip": "TesteTecnicoWK\\Repository\\ClienteRepository.cs",
+              "Title": "EditarProduto.cshtml",
+              "DocumentMoniker": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Views\\Produto\\EditarProduto.cshtml",
+              "RelativeDocumentMoniker": "TesteTecnicoWK\\Views\\Produto\\EditarProduto.cshtml",
+              "ToolTip": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Views\\Produto\\EditarProduto.cshtml",
+              "RelativeToolTip": "TesteTecnicoWK\\Views\\Produto\\EditarProduto.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T22:17:22.461Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T21:35:29.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IClienteInterface.cs",
-              "DocumentMoniker": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Repository\\IClienteInterface.cs",
-              "RelativeDocumentMoniker": "TesteTecnicoWK\\Repository\\IClienteInterface.cs",
-              "ToolTip": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Repository\\IClienteInterface.cs",
-              "RelativeToolTip": "TesteTecnicoWK\\Repository\\IClienteInterface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T22:19:14.596Z",
+              "Title": "ExcluirProduto.cshtml",
+              "DocumentMoniker": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Views\\Produto\\ExcluirProduto.cshtml",
+              "RelativeDocumentMoniker": "TesteTecnicoWK\\Views\\Produto\\ExcluirProduto.cshtml",
+              "ToolTip": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Views\\Produto\\ExcluirProduto.cshtml",
+              "RelativeToolTip": "TesteTecnicoWK\\Views\\Produto\\ExcluirProduto.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T21:35:04.252Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "TesteTecnicoWK\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "TesteTecnicoWK\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowBsAAAAxAAAAAAAAAA==",
+              "Title": "MostrarProduto.cshtml",
+              "DocumentMoniker": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Views\\Produto\\MostrarProduto.cshtml",
+              "RelativeDocumentMoniker": "TesteTecnicoWK\\Views\\Produto\\MostrarProduto.cshtml",
+              "ToolTip": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Views\\Produto\\MostrarProduto.cshtml",
+              "RelativeToolTip": "TesteTecnicoWK\\Views\\Produto\\MostrarProduto.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T21:34:55.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Controllers\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "TesteTecnicoWK\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Controllers\\ProdutoController.cs",
+              "RelativeToolTip": "TesteTecnicoWK\\Controllers\\ProdutoController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowCcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T21:08:59.695Z",
+              "WhenOpened": "2025-02-01T21:34:20.872Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "BancoContext.cs",
-              "DocumentMoniker": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Data\\BancoContext.cs",
-              "RelativeDocumentMoniker": "TesteTecnicoWK\\Data\\BancoContext.cs",
-              "ToolTip": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Data\\BancoContext.cs",
-              "RelativeToolTip": "TesteTecnicoWK\\Data\\BancoContext.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCAAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T22:10:51.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "ClienteModel.cs",
               "DocumentMoniker": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Models\\ClienteModel.cs",
               "RelativeDocumentMoniker": "TesteTecnicoWK\\Models\\ClienteModel.cs",
               "ToolTip": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Models\\ClienteModel.cs",
               "RelativeToolTip": "TesteTecnicoWK\\Models\\ClienteModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T21:49:28.336Z",
+              "WhenOpened": "2025-02-01T21:03:44.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioModel.cs",
+              "DocumentMoniker": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Models\\UsuarioModel.cs",
+              "RelativeDocumentMoniker": "TesteTecnicoWK\\Models\\UsuarioModel.cs",
+              "ToolTip": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\Models\\UsuarioModel.cs",
+              "RelativeToolTip": "TesteTecnicoWK\\Models\\UsuarioModel.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T20:59:25.004Z",
               "EditorCaption": ""
             }
           ]

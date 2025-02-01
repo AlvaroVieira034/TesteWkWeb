@@ -44,7 +44,7 @@ namespace TesteTecnicoWK.Data
                 .HasPrecision(18, 4);
 
             modelBuilder.Entity<ProdutoModel>()
-                .Property(p => p.Val_Preco)
+                .Property(pd => pd.Val_Preco)
                 .HasPrecision(18, 4);
 
             base.OnModelCreating(modelBuilder);
