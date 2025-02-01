@@ -35,4 +35,49 @@
     </div>
     <button type="submit" class="btn btn-primary">Gravar</button>
     <a class="btn btn-secondary" asp-controller="Cliente" asp-action="Index">Voltar</a>
+
+
+    @section Scripts {
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                // Aplica a máscara no campo de CEP
+                $('#cep').mask('00000-000');
+
+                // Adiciona funcionalidade para buscar o endereço pelo CEP
+                $('#cep').on('blur', async function () {
+                    const cep = $(this).val().replace(/\D/g, '');
+
+                    if (cep.length === 8) {
+                        try {
+                            const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+                            if (!response.ok) throw new Error("Erro ao buscar o CEP.");
+
+                            const dados = await response.json();
+
+                            if (dados.erro) {
+                                alert("CEP não encontrado.");
+                                return;
+                            }
+
+                            $('#endereco').val(dados.logradouro || '').prop('disabled', false);
+                            $('#bairro').val(dados.bairro || '').prop('disabled', false);
+                            $('#cidade').val(dados.localidade || '').prop('disabled', false);
+                            $('#uf').val(dados.uf || '').prop('disabled', false);
+                            $('#complemento').val(dados.complemento || '').prop('disabled', false);
+
+                        } catch (error) {
+                            console.error("Erro ao buscar o CEP:", error);
+                            alert("Não foi possível buscar o CEP. Tente novamente mais tarde.");
+                        }
+                    } else {
+                        alert("CEP inválido. Certifique-se de informar 8 dígitos.");
+                    }
+                });
+            });
+        </script>
+    }
 </form>

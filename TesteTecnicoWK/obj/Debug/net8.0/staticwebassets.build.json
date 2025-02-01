@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RLJ2/GR6q2sJXKaU763Cb99n6tN7NMasyUtKIXuuteI=",
+  "Hash": "dF8l+EN5Jm7Psz9r/+SBGAtdrtrCe7Kje79xrzhIQkw=",
   "Source": "TesteTecnicoWK",
   "BasePath": "_content/TesteTecnicoWK",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vw5dxhhn6c",
-      "Integrity": "L9R5KMsJ+6JLNopIfy+lM/kYvdmIU1tKkLCOq5JmK1k=",
+      "Fingerprint": "97ctxssyr2",
+      "Integrity": "BdRJEu623M5VzglZ8Yibu7xv0/RnsDDPC0Qqps2Bk6U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -1485,6 +1485,51 @@
       ]
     },
     {
+      "Route": "js/site.97ctxssyr2.js",
+      "AssetFile": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1537"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BdRJEu623M5VzglZ8Yibu7xv0/RnsDDPC0Qqps2Bk6U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 03:07:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "97ctxssyr2"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BdRJEu623M5VzglZ8Yibu7xv0/RnsDDPC0Qqps2Bk6U="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -1495,7 +1540,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "345"
+          "Value": "1537"
         },
         {
           "Name": "Content-Type",
@@ -1503,11 +1548,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"L9R5KMsJ+6JLNopIfy+lM/kYvdmIU1tKkLCOq5JmK1k=\""
+          "Value": "\"BdRJEu623M5VzglZ8Yibu7xv0/RnsDDPC0Qqps2Bk6U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 02:08:32 GMT"
+          "Value": "Sat, 01 Feb 2025 03:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1517,52 +1562,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-L9R5KMsJ+6JLNopIfy+lM/kYvdmIU1tKkLCOq5JmK1k="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.vw5dxhhn6c.js",
-      "AssetFile": "C:\\Treinamento\\c#\\TesteTecnicoWK\\TesteTecnicoWK\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "345"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L9R5KMsJ+6JLNopIfy+lM/kYvdmIU1tKkLCOq5JmK1k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 02:08:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vw5dxhhn6c"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-L9R5KMsJ+6JLNopIfy+lM/kYvdmIU1tKkLCOq5JmK1k="
+          "Value": "sha256-BdRJEu623M5VzglZ8Yibu7xv0/RnsDDPC0Qqps2Bk6U="
         }
       ]
     },

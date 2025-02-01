@@ -42,6 +42,8 @@
     </form>
 
 
+    @section Scripts {
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
@@ -71,6 +73,7 @@
                         $('#cidade').val(dados.localidade || '').prop('disabled', false);
                         $('#uf').val(dados.uf || '').prop('disabled', false);
                         $('#complemento').val(dados.complemento || '').prop('disabled', false);
+                        
                     } catch (error) {
                         console.error("Erro ao buscar o CEP:", error);
                         alert("Não foi possível buscar o CEP. Tente novamente mais tarde.");
@@ -81,4 +84,6 @@
             });
         });
     </script>
+
+    }
 </body>

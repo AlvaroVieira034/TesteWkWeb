@@ -24,17 +24,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 31 Jan 2025 20:57:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TesteTecnicoWK/js/site.97ctxssyr2.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"97ctxssyr2"},{"Name":"integrity","Value":"sha256-BdRJEu623M5VzglZ8Yibu7xv0/RnsDDPC0Qqps2Bk6U="},{"Name":"label","Value":"_content/TesteTecnicoWK/js/site.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1537"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022BdRJEu623M5VzglZ8Yibu7xv0/RnsDDPC0Qqps2Bk6U=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 03:07:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/TesteTecnicoWK/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-L9R5KMsJ\u002B6JLNopIfy\u002BlM/kYvdmIU1tKkLCOq5JmK1k="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"345"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022L9R5KMsJ\u002B6JLNopIfy\u002BlM/kYvdmIU1tKkLCOq5JmK1k=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 02:08:32 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/TesteTecnicoWK/js/site.vw5dxhhn6c.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vw5dxhhn6c"},{"Name":"integrity","Value":"sha256-L9R5KMsJ\u002B6JLNopIfy\u002BlM/kYvdmIU1tKkLCOq5JmK1k="},{"Name":"label","Value":"_content/TesteTecnicoWK/js/site.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"345"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022L9R5KMsJ\u002B6JLNopIfy\u002BlM/kYvdmIU1tKkLCOq5JmK1k=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 02:08:32 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BdRJEu623M5VzglZ8Yibu7xv0/RnsDDPC0Qqps2Bk6U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1537"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022BdRJEu623M5VzglZ8Yibu7xv0/RnsDDPC0Qqps2Bk6U=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Feb 2025 03:07:43 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/TesteTecnicoWK/lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>
