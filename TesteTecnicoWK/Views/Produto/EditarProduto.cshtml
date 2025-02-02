@@ -1,0 +1,31 @@
+﻿@model ProdutoModel
+@{
+    ViewData["Title"] = "Edição de Produtos";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Alteração de Produtos</h1>
+</div>
+
+<body>
+    <form asp-controller="Produto" asp-action="EditarProduto" method="post">
+        <input type="hidden" asp-for="Cod_Produto" /> <!-- Campo oculto para o ID do cliente -->
+        <div class="form-group mt-3 mb-3">
+            <label for="nome" class="form-label">Descrição do Produto</label>
+            <input type="text" asp-for="Des_Descricao" class="form-control" placeholder="Informe a descrição do produto."
+                   style="text-transform: uppercase;" oninput="this.value = this.value.toUpperCase()">
+            @Html.ValidationMessageFor(x => x.Des_Descricao)
+        </div>
+
+        <div class="form-group mt-3 mb-3">
+            <label for="preco" class="form-label">Preço de Venda</label>
+            <input type="number" id="preco" asp-for="Val_Preco" class="form-control" step="0.01"
+                   value="@Model.Val_Preco.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture)">
+            @Html.ValidationMessageFor(x => x.Val_Preco)
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Gravar</button>
+        <a class="btn btn-secondary" asp-controller="Produto" asp-action="Index">Voltar</a>
+    </form>
+</body>

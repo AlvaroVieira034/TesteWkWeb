@@ -1,0 +1,30 @@
+﻿@model ProdutoModel
+@{
+    ViewData["Title"] = "Exclusão de Produtos";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Exclusão de Produtos</h1>
+</div>
+
+<body>
+    <form asp-controller="Produto" asp-action="ExcluirProduto" method="post">
+        <input type="hidden" asp-for="Cod_Produto" /> <!-- Campo oculto para o ID do cliente -->
+        <div class="form-group mt-3 mb-3">
+            <label for="nome" class="form-label">Descrição do Produto</label>
+            <input type="text" asp-for="Des_Descricao" class="form-control">
+        </div>
+
+        <div class="form-group mt-3 mb-3">
+            <label for="preco" class="form-label">Preço de Venda</label>
+            <input type="number" id="preco" asp-for="Val_Preco" class="form-control" step="0.01"
+                   value="@Model.Val_Preco.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture)">
+        </div>
+
+        <a class="btn btn-primary btn-sm" role="button" asp-controller="Cliente" asp-action="Index">Cancelar Exclusão</a>
+        <a class="btn btn-danger btn-sm" role="button" asp-controller="Cliente" asp-action="ApagarCliente" asp-route-id="@Model.Cod_Produto">Confirmar Exclusão</a>
+    </form>
+
+
+
+</body>

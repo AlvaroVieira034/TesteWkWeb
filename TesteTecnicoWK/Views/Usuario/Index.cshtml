@@ -1,0 +1,61 @@
+﻿@model List<UsuarioModel>
+@{
+    ViewData["Title"] = "Página de Usuarios";
+}
+<div class="text-center">
+    <h4 class="display-5">Cadastro de Usuários</h4>
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["MensagemSucesso"]
+        </div>
+    }
+
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @TempData["MensagemErro"]
+        </div>
+    }
+
+</div>
+<div class="d-grid gap-2 d-md-flex justify-content-md-start border mt-4">
+    <a class="btn btn-success w-100" role="button" asp-controller="Usuario" asp-action="IncluirUsuario">Incluir novo Usuário</a>
+</div>
+<table class="table table-hover table-border mt-4" id="table-grid">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome do Usuário</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Login</th>
+            <th scope="col">Data Cadastro</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (UsuarioModel usuario in Model)
+            {
+                <tr>
+                    <th scope="row">@usuario.Cod_Usuario</th>
+                    <td>@usuario.Des_NomeUsuario</td>
+                    <td>@usuario.Des_Email</td>
+                    <td>@usuario.Des_Login</td>
+                    <td>@usuario.Dta_Cadastro</td>
+                    <td>
+                        <a role="button" class="btn btn-primary btn-sm" asp-route-id="@usuario.Cod_Usuario" asp-controller="Usuario" asp-action="EditarUsuario">Editar</a>
+                        <a role="button" class="btn btn-secondary btn-sm" asp-route-id="@usuario.Cod_Usuario" asp-controller="Usuario" asp-action="MostrarUsuario">Detalhes</a>
+                        <a role="button" class="btn btn-danger btn-sm" asp-route-id="@usuario.Cod_Usuario" asp-controller="Usuario" asp-action="ExcluirUsuario">Excluir</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr class="odd"><td valign="top" colspan="9">Nenhum usuário encontrado</td></tr>
+        }
+    </tbody>
+</table>

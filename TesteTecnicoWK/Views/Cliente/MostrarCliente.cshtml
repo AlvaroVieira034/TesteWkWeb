@@ -27,7 +27,7 @@
 
     <div class="form-group mt-3 mb-3">
         <label for="uf" class="form-label">Estado</label>
-        <select id="uf" asp-for="Des_UF" class="form-control">
+        <select id="uf" asp-for="Des_UF" class="form-control" disabled>
             <option value="" disabled selected>Selecione um estado</option>
             @foreach (var estado in Enum.GetValues(typeof(EstadosEnum)))
             {

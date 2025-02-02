@@ -49,7 +49,7 @@ namespace TesteTecnicoWK.Repository
         {
             ClienteModel clienteDB = BuscarClientePorId(id);
 
-            if (clienteDB == null) throw new System.Exception("Houve um erro ao excluir o cliente");
+            if (clienteDB == null) throw new System.Exception("Exceção lançada classe ClienteRepository - Metodo: ExcluirCliente");
 
             _bancoContext.Tab_Cliente.Remove(clienteDB);
             _bancoContext.SaveChanges(true);

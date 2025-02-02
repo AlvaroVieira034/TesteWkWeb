@@ -1,0 +1,67 @@
+﻿@using TesteTecnicoWK.Enums
+@model UsuarioModel
+@{
+    ViewData["Title"] = "Mostrar dados de Usuários";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Exclusão de Usuários</h1>
+</div>
+
+<body>
+    <form asp-controller="Usuario" asp-action="MostarUsuario" method="post">
+        <input type="hidden" asp-for="Cod_Usuario" /> <!-- Campo oculto para o ID do Usuario -->
+        <div class="form-group mt-3 mb-3">
+            <label for="nome" class="form-label">Nome do Usuário</label>
+            <input type="text" asp-for="Des_NomeUsuario" class="form-control" placeholder="Informe o nome do usuário."
+                   style="text-transform: uppercase;" oninput="this.value = this.value.toUpperCase()" disabled>
+            @Html.ValidationMessageFor(x => x.Des_NomeUsuario)
+        </div>
+
+        <div class="form-group mt-3 mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="text" id="email" asp-for="Des_Email" class="form-control" placeholder="Informe o e-mail do usuário" disabled>
+            @Html.ValidationMessageFor(x => x.Des_Email)
+        </div>
+
+        <div class="form-group mt-3 mb-3">
+            <label for="login" class="form-label">Login</label>
+            <input type="text" id="login" asp-for="Des_Login" class="form-control" placeholder="Informe o login do usuário" disabled>
+            @Html.ValidationMessageFor(x => x.Des_Login)
+        </div>
+
+        <div class="form-group mt-3 mb-3">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="text" id="senha" asp-for="Des_Senha" class="form-control" placeholder="Informe a senha do usuário" disabled>
+            @Html.ValidationMessageFor(x => x.Des_Senha)
+        </div>
+
+        <div class="form-group mt-3 mb-3">
+            <label for="perfil" class="form-label">Perfil do Usuário</label>
+            <select id="perfil" asp-for="Cod_Perfil" class="form-control" disabled>
+                <option value="" disabled selected>Selecione um perfil</option>
+                @foreach (var perfil in Enum.GetValues(typeof(PerfilEnum)))
+                {
+                    <option value="@perfil">@perfil</option>
+                }
+            </select>
+        </div>
+
+        <div class="form-group mt-3 mb-3">
+            <label for="datacadastro" class="form-label">Data do Cadastro</label>
+            <input type="text" id="senha" asp-for="Dta_Cadastro" class="form-control" placeholder="Informe a senha do usuário" disabled>
+            @Html.ValidationMessageFor(x => x.Dta_Cadastro)
+        </div>
+
+        <div class="form-group mt-3 mb-3">
+            <label for="dataatualizacao" class="form-label">Data de Atualização</label>
+            <input type="date" asp-for="Dta_Atualizacao" class="form-control"
+                   value="@DateTime.Now.ToString("yyyy-MM-dd" )"
+                   placeholder="Informe a data de atualização do cadastro" disabled>
+            @Html.ValidationMessageFor(x => x.Dta_Atualizacao)
+        </div>
+
+        <a class="btn btn-primary btn-sm" role="button" asp-controller="Usuario" asp-action="Index">Voltar</a>
+
+    </form>
+</body>

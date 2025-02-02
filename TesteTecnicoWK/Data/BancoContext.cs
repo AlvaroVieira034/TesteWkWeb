@@ -14,6 +14,7 @@ namespace TesteTecnicoWK.Data
         public DbSet<PedidoModel> Tab_Pedido { get; set; }
         public DbSet<PedidoItemModel> Tab_Pedido_Item { get; set; }
         public DbSet<ProdutoModel> Tab_Produto { get; set; }
+        public DbSet<UsuarioModel> Tab_Usuario { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
